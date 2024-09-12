@@ -48,9 +48,11 @@ Page Auto Reload is a Python script that automatically reloads a specified webpa
 
 - **num_reloads**: The number of times to reload the webpage in each browser instance.
 - **num_windows**: The number of browser instances (threads) to run concurrently.
+- **url**: Target Url.
 
 You can change these parameters directly in the script:
 ```python
 num_reloads = 50
 num_windows = 10
+url = "https://www.google.com"
 
