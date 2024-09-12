@@ -8,6 +8,7 @@ import threading
 
 lock = threading.Lock()
 total_reload_count = 0
+url = "https://www.google.com"
 
 def open_and_reload(url, num_reloads):
     global total_reload_count
@@ -45,7 +46,7 @@ num_reloads = 50 #Times the page reloads for each thread
 num_windows = 10 #Adjust this depending on your CPU threads
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=num_windows) as executor:
-    futures = [executor.submit(open_and_reload, "https://www.google.com", num_reloads) for _ in range(num_windows)]
+    futures = [executor.submit(open_and_reload, url, num_reloads) for _ in range(num_windows)]
 
     for future in concurrent.futures.as_completed(futures):
         try:
