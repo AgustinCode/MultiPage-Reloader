@@ -52,7 +52,7 @@ Page Auto Reload is a Python script that automatically reloads a specified webpa
 
 You can change these parameters directly in the script:
 ```python
-num_reloads = 50 **in line 45**
-num_windows = 10 **in line 46**
-url = "https://www.google.com" **in line 11**
+num_reloads = 50 #in line 45
+num_windows = 10 #in line 46
+url = "https://www.google.com" #in line 11
 
