@@ -29,7 +29,7 @@ Page Auto Reload is a Python script that automatically reloads a specified webpa
     pip install -r requirements.txt
     ```
 
-    The `requirements.txt` file should contain:
+    The `requirements.txt` file contains:
     ```txt
     selenium
     webdriver-manager
